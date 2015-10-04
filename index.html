@@ -1,0 +1,16 @@
+<html>
+<head>
+	<script type="text/javascript">
+		var java = require("java");
+
+		java.classpath.push("./src");
+		var Test = java.import("com.axisj.node.java.example.Test");
+
+		var result = Test.addNumbersSync(2, 3);
+		document.write("Result : " + result);
+	</script>
+</head>
+<body>
+	<h1>Hello Electron!</h1>
+</body>
+</html>
